@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-theme-color: #6d28d9;
+  --swiper-navigation-size: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Custom cursor effect */
+.custom-cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #6d28d9;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(109, 40, 217, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease-out, height 0.2s ease-out;
+}
+
+/* Glassmorphism styles */
+.glass {
+  @apply bg-opacity-20 backdrop-blur-lg bg-gray-800 border border-gray-700 border-opacity-30;
+}
+
+.glass-darker {
+  @apply bg-opacity-40 backdrop-blur-lg bg-gray-900 border border-gray-800 border-opacity-30;
+}
+
+/* Glow effects */
+.glow {
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+.glow-sm {
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet {
+  @apply bg-violet-500 opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-violet-500 opacity-100;
+}
+
+/* Custom transitions */
+.fade-in {
+  @apply transition-opacity duration-500 ease-in-out;
+}
+
+.slide-up {
+  @apply transition-transform duration-500 ease-in-out;
+}
+
+/* Form elements */
+.input-glass {
+  @apply glass w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-violet-600 hover:bg-violet-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-violet-600/20;
+}
+
+.btn-outline {
+  @apply border border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300;
+}
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
