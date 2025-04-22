@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Grid } from 'swiper/modules';
-import { Figma, FileCode2, FileCode, Braces, Github, Cpu, GitBranch, Database, Phone as Php, Framer as FramerLogo } from 'lucide-react';
+import { Figma, FileCode2, FileCode, Braces, Github, Cpu, GitBranch, Database, Receipt, Atom} from 'lucide-react';
 import SkillCard from './SkillCard';
 
 // Import Swiper styles
@@ -19,8 +19,8 @@ const Skills: React.FC = () => {
     { name: 'Python', icon: <Cpu size={24} /> },
     { name: 'Git', icon: <GitBranch size={24} /> },
     { name: 'SQL', icon: <Database size={24} /> },
-    { name: 'PHP', icon: <Php size={24} /> },
-    { name: 'React', icon: <FramerLogo size={24} /> }
+    { name: 'PHP', icon: <Receipt size={24} /> },
+    { name: 'React', icon: <Atom size={24} /> }
   ];
 
   return (

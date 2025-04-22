@@ -107,21 +107,9 @@ const Footer: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              @ 1Yass-Dev | All Rights Reserved {currentYear} | Made with
+              @ 1Yass-Dev | All Rights Reserved {currentYear} 
             </motion.span>
-            <motion.span
-              className="inline-block mx-1 text-red-500"
-              animate={{
-                scale: [1, 1.2, 1],
-              }}
-              transition={{
-                repeat: Infinity,
-                duration: 1.5,
-                repeatType: "loop",
-              }}
-            >
-              <Heart size={14} fill="currentColor" />
-            </motion.span>
+           
           </p>
         </div>
       </div>
