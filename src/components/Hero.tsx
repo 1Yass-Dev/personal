@@ -130,11 +130,11 @@ const Hero: React.FC = () => {
             variants={itemVariants}
           >
             <motion.a
-              href="#"
+              href="/cv-.pdf"
               className="btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
+           Download >
               Download My CV
             </motion.a>
             
@@ -153,7 +153,7 @@ const Hero: React.FC = () => {
             variants={itemVariants}
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/1Yass-Dev"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full transition-all duration-300"
@@ -164,7 +164,7 @@ const Hero: React.FC = () => {
             </motion.a>
             
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/elkortih-yassine-dev/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full transition-all duration-300"
@@ -175,7 +175,7 @@ const Hero: React.FC = () => {
             </motion.a>
             
             <motion.a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/+212623155756"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full transition-all duration-300"
